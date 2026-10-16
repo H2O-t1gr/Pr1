@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Практична робота — методи масивів</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Практична робота. Методи масивів</h1>
+  <p class="student-info">Шликов Денис, 19</p>
+
+  <section class="task-block">
+    <p class="task-title">1. Фільтрація та пошук (filter, find)</p>
+    <div class="btn-row">
+      <button onclick="task1ShowAll()">усі товари</button>
+      <button onclick="task1ShowAvailable()">товари в наявності</button>
+    </div>
+    <div class="form-row">
+      <label for="productName">Назва товару</label>
+      <input type="text" id="productName" value="Монітор">
+      <button onclick="task1Find()">знайти</button>
+    </div>
+    <div class="result-area" id="box1"></div>
+  </section>
+
+  <section class="task-block">
+    <p class="task-title">2. Групування та сортування (reduce, push, sort)</p>
+    <div class="btn-row">
+      <button onclick="task2ShowAll()">усі студенти</button>
+      <button onclick="task2ShowGroups()">групувати за групами</button>
+      <button onclick="task2ShowSorted()">сортувати за оцінкою</button>
+    </div>
+    <div class="result-area" id="box2"></div>
+  </section>
+
+  <section class="task-block">
+    <p class="task-title">3. Статистичний аналіз (reduce)</p>
+    <div class="btn-row">
+      <button onclick="task3ShowAll()">усі працівники</button>
+      <button onclick="task3Average()">середня зарплата</button>
+      <button onclick="task3MostExperienced()">найбільший досвід</button>
+    </div>
+    <div class="result-area" id="box3"></div>
+  </section>
+
+  <section class="task-block">
+    <p class="task-title">4. Книги (reduce, sort)</p>
+    <div class="btn-row">
+      <button onclick="task4ShowAll()">усі книги</button>
+      <button onclick="task4Unread()">непрочитані</button>
+      <button onclick="task4TopRated()">рейтинг вище 4</button>
+    </div>
+    <div class="form-row">
+      <label for="authorName">Автор</label>
+      <input type="text" id="authorName" value="Михайло Коцюбинський">
+      <button onclick="task4ByAuthor()">книги автора</button>
+    </div>
+    <div class="result-area" id="box4"></div>
+  </section>
+
+  <section class="task-block">
+    <p class="task-title">5. Вкладені об'єкти (reduce, filter)</p>
+    <div class="btn-row">
+      <button onclick="task5ShowAll()">усі замовлення</button>
+    </div>
+    <div class="form-row">
+      <label for="customerName">Ім'я клієнта</label>
+      <input type="text" id="customerName" value="Іван Петренко">
+      <button onclick="task5Total()">підрахувати витрати</button>
+    </div>
+    <div class="result-area" id="box5"></div>
+  </section>
+
+  <section class="task-block">
+    <p class="task-title">6. Об'єднання даних (reduce, find)</p>
+    <div class="btn-row">
+      <button onclick="task6ShowSource()">вихідні дані</button>
+      <button onclick="task6Sales()">загальний дохід по товарах</button>
+    </div>
+    <div class="result-area" id="box6"></div>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
